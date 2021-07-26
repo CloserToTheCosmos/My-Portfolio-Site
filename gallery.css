@@ -1,0 +1,147 @@
+/* only works on a minimum screen size of iphone 5/5s */
+@media only screen and (max-width: 319px) {
+  body {
+    display: none;
+  }
+}
+
+/* works on every modern smartphone size */
+@media only screen and (min-width: 319), (max-width: 500px) {
+  * {
+    margin: 0;
+  }
+
+  .parent {
+    background-image: linear-gradient(to right, #151516, #090a0a, #151617);
+    overflow: hidden;
+    /* display: -ms-grid;
+    display: -moz-grid;
+    display: grid; */
+  }
+
+  h1 {
+    color: white;
+    text-shadow: 0 0 15px #396afc;
+    font-size: 80px;
+    font-family: monospace;
+    text-align: center;
+  }
+
+  .bangalore-images,
+  .himachal-images,
+  .delhi-images,
+  .product-photography {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bangalore-images div,
+  .himachal-images div,
+  .delhi-images div,
+  .product-photography div {
+    text-align: center;
+  }
+
+  img {
+    max-width: 310px;
+    border: 5px solid white;
+    /* box-shadow: 0 0 15px #396afc; */
+    margin-bottom: 20px;
+  }
+
+  /* scrollable-navigation bar */
+  .mobile-only {
+    background-color: #333;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bolder;
+    letter-spacing: 6px;
+  }
+}
+
+/* screen size for desktops and tablets */
+@media only screen and (min-width: 501px) {
+  * {
+    margin: 0;
+  }
+
+  .parent {
+    background-image: linear-gradient(to right, #151516, #090a0a, #151617);
+    overflow: hidden;
+    /* display: -ms-grid;
+        display: -moz-grid;
+        display: grid; */
+  }
+
+  h1 {
+    color: white;
+    text-shadow: 0 0 15px #396afc;
+    font-size: 80px;
+    font-family: monospace;
+    text-align: center;
+  }
+
+  .bangalore-images,
+  .himachal-images,
+  .delhi-images,
+  .product-photography {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .bangalore-images div,
+  .himachal-images div,
+  .delhi-images div,
+  .product-photography div {
+    text-align: center;
+  }
+
+  img {
+    max-width: 26rem;
+    border: 5px solid white;
+    /* box-shadow: 0 0 15px #396afc; */
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px#396afc;
+  }
+
+  /* navigation bar */
+  .navigation {
+    background-color: #333;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bolder;
+    letter-spacing: 6px;
+  }
+
+  a:hover {
+    color: aqua;
+  }
+}

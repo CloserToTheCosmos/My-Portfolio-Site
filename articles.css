@@ -1,0 +1,225 @@
+/* only works on a minimum screen size of iphone 5/5s */
+@media only screen and (max-width: 319px) {
+  body {
+    display: none;
+  }
+}
+
+/* works on every modern smartphone size */
+@media only screen and (min-width: 319), (max-width: 500px) {
+  * {
+    margin: 0;
+  }
+  body {
+    background-image: linear-gradient(to right, #151516, #090a0a, #151617);
+    color: white;
+  }
+  h1 {
+    font-size: 70px;
+    text-shadow: 0 0 15px #396afc;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  button {
+    background-color: #396afc;
+    border: 5px solid white;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0 0 15px black;
+    border-radius: 20px;
+  }
+
+  /* Article - 1 */
+
+  .article-1 {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    position: relative;
+  }
+
+  h2,
+  h3 {
+    color: #396afc;
+    text-shadow: 0 0 25px blue;
+    font-size: 30px;
+  }
+
+  b {
+    background-color: #396afc;
+    border: 2px solid white;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  iframe {
+    margin: 10px;
+    box-shadow: 0px 0px 5px white;
+  }
+
+  /* Scrollable nav bar for mobile only */
+  .navbar {
+    background-color: #333;
+    width: 100%;
+    position: -ms-page;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    padding: 30px;
+    opacity: 0.8;
+  }
+
+  .navbar a {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 900;
+  }
+}
+
+/* screen size of tablets and desktops */
+
+@media only screen and (min-width: 500px), (max-width: 500) {
+  * {
+    margin: 20px;
+  }
+  body {
+    background-image: linear-gradient(to right, #151516, #090a0a, #151617);
+    color: white;
+  }
+
+  h1 {
+    font-size: 70px;
+    text-shadow: 0 0 15px #396afc;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  button {
+    background-color: #396afc;
+    border: 5px solid white;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 0 15px black;
+    border-radius: 20px;
+  }
+
+  button:hover {
+    opacity: 0.5;
+  }
+
+  /* Article - 1 */
+
+  .article-1 {
+    font-family: sans-serif;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  #intro-article1,
+  #body-article1,
+  #body2-article1,
+  #con-article1 {
+    text-align: center;
+  }
+
+  #intro-article1:hover,
+  #body-article1:hover,
+  #body2-article1:hover,
+  #con-article1:hover {
+    /* background-color: #396afc; */
+    font-weight: 900;
+    animation: disco-text 3.5s infinite steps(100);
+  }
+
+  @keyframes disco-text {
+    0% {
+      background-color: violet;
+    }
+    20% {
+      background-color: indigo;
+    }
+    40% {
+      background-color: blue;
+    }
+    60% {
+      background-color: green;
+    }
+    80% {
+      background-color: yellow;
+      color: #333;
+    }
+    90% {
+      background-color: orange;
+    }
+    100% {
+      background-color: red;
+    }
+  }
+
+  h2,
+  h3 {
+    color: #396afc;
+    text-shadow: 0 0 25px blue;
+    font-size: 30px;
+  }
+
+  b {
+    background-color: #396afc;
+    border: 2px solid white;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  iframe {
+    margin: 10px;
+    box-shadow: 0px 0px 10px white;
+  }
+
+  .about-me a,
+  .gallery a {
+    width: 100px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    position: -webkit-sticky;
+    position: relative;
+    top: 10px;
+    left: 0px;
+    margin: 10px;
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    text-decoration: none;
+    animation: navbar 1s infinite steps(60);
+    text-align: center;
+  }
+
+  @keyframes navbar {
+    0% {
+      background-color: #396afc;
+    }
+
+    100% {
+      background-color: darkblue;
+    }
+  }
+
+  .navbar:hover a {
+    background-color: #396afc;
+    font-weight: 900;
+  }
+}
