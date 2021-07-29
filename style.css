@@ -12,7 +12,7 @@
     color: white;
   }
   /* TITLE */
-  .header {
+  .main-title {
     font-weight: bolder;
     font-family: monospace;
     font-size: 90px;
@@ -20,7 +20,7 @@
     text-align: center;
   }
 
-  .POR {
+  #POR {
     position: relative;
     animation: POR 1.5s steps(50) 1;
   }
@@ -28,13 +28,13 @@
   @keyframes POR {
     40%,
     60% {
-      right: calc(100% + 30px);
+      right: calc(100% + 30px); /*movement towards right of the words POR*/
     }
     100% {
       right: 0;
     }
   }
-  .TFO {
+  #TFO {
     position: relative;
     animation: TFO 2s steps(100) 1;
   }
@@ -42,13 +42,13 @@
   @keyframes TFO {
     40%,
     60% {
-      right: calc(100% + 30px);
+      right: calc(100% + 30px); /*movement towards right of the words TFO*/
     }
     100% {
       right: 0;
     }
   }
-  .LIO {
+  #LIO {
     position: relative;
     animation: LIO 3s steps(200) 1;
   }
@@ -56,7 +56,7 @@
   @keyframes LIO {
     40%,
     60% {
-      right: calc(100% + 30px);
+      right: calc(100% + 30px); /*movement towards right of the words LIO*/
     }
     100% {
       right: 0;
@@ -64,7 +64,7 @@
   }
 
   /* VIEW BUTTON */
-  .action-button {
+  .view-button {
     background: black;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -76,7 +76,7 @@
     margin-left: 200px;
     border: 3px solid #396afc;
     position: relative;
-    animation: move 1s infinite steps(60);
+    animation: move 1s infinite steps(100);
   }
 
   @keyframes move {
@@ -87,7 +87,7 @@
       width: 90px;
     }
   }
-  .action-button:focus {
+  .view-button:focus {
     color: #396afc;
   }
   a {
@@ -104,7 +104,7 @@
   }
 
   /* TITLE */
-  .header {
+  .main-title {
     font-weight: bolder;
     font-family: monospace;
     font-size: 8em;
@@ -113,7 +113,7 @@
     letter-spacing: 50px;
   }
 
-  .POR {
+  #POR {
     position: relative;
     animation: POR 1.5s steps(50) 1;
   }
@@ -121,13 +121,13 @@
   @keyframes POR {
     40%,
     60% {
-      right: calc(100% + 30px);
+      right: calc(100% + 30px); /*movement towards right of the words POR*/
     }
     100% {
       right: 0;
     }
   }
-  .TFO {
+  #TFO {
     position: relative;
     animation: TFO 2s steps(100) 1;
   }
@@ -135,13 +135,13 @@
   @keyframes TFO {
     40%,
     60% {
-      right: calc(100% + 30px);
+      right: calc(100% + 30px); /*movement towards right of the words TFO*/
     }
     100% {
       right: 0;
     }
   }
-  .LIO {
+  #LIO {
     position: relative;
     animation: LIO 3s steps(200) 1;
   }
@@ -149,7 +149,7 @@
   @keyframes LIO {
     40%,
     60% {
-      right: calc(100% + 30px);
+      right: calc(100% + 30px); /*movement towards right of the words LIO*/
     }
     100% {
       right: 0;
@@ -157,7 +157,7 @@
   }
 
   /* VIEW BUTTON */
-  .action-button {
+  .view-button {
     background: black;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -171,7 +171,7 @@
     border: 3px solid white;
     position: absolute;
     display: flex;
-    animation: move 3s 1 steps(60);
+    animation: move 3s 1 steps(100);
   }
 
   @keyframes move {
@@ -183,7 +183,9 @@
       right: 0;
     }
   }
-  .action-button:hover {
+
+  /* hover effect - changes color to blue */
+  .view-button:hover {
     text-shadow: 0 0 20px #396afc;
     border: 3px solid #396afc;
   }
