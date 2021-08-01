@@ -34,7 +34,7 @@
 
   /* Article - 1 */
 
-  .article-1 {
+  .article {
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
@@ -123,23 +123,23 @@
 
   /* Article - 1 */
 
-  .article-1 {
+  .article {
     font-family: sans-serif;
     line-height: 25px;
     text-align: center;
   }
 
-  #intro-article1,
-  #body-article1,
-  #body2-article1,
-  #con-article1 {
+  .intro-article,
+  .body-article,
+  .body2-article,
+  .con-article {
     text-align: center;
   }
 
-  #intro-article1:hover,
-  #body-article1:hover,
-  #body2-article1:hover,
-  #con-article1:hover {
+  .intro-article:hover,
+  .body-article:hover,
+  .body2-article:hover,
+  .con-article:hover {
     /* background-color: #396afc; */
     font-weight: 900;
     animation: disco-text 3.5s infinite steps(100);
