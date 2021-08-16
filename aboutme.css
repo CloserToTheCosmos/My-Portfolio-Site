@@ -31,6 +31,12 @@
     overflow: hidden; /*keeping things from spilling out in smaller phones */
   }
 
+  .myNiche ol {
+    border: 2px solid #396afc;
+    line-height: 20px;
+    list-style-type: none;
+  }
+
   h1 {
     color: white;
     font-size: 30px;
